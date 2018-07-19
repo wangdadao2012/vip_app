@@ -40,7 +40,7 @@
         <activity
             android:name="www.comradesoftware.vip.activities.SplashActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.Splash_bg"
+            android:theme="@style/AppTheme.Splash_translucent"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
