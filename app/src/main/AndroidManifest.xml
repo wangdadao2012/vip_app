@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="www.comradesoftware.vip001">
 
     <!-- 读写sdcard权限 -->
@@ -14,14 +15,16 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!--<uses-permission android:name="android.permission.RESTART_PACKAGES" />-->
     <uses-permission android:name="android.permission.BROADCAST_STICKY" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
-    <uses-permission android:name="android.permission.GET_TASKS" />
-    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!--<uses-permission android:name="android.permission.GET_TASKS" />-->
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
@@ -36,15 +39,18 @@
             android:name="www.comradesoftware.vip.activities.MainActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar"
             android:label="@string/app_name" />
-        <activity android:name="www.comradesoftware.vip.activities.ActivityBase" />
+        <activity android:name="www.comradesoftware.vip.activities.BaseActivity" />
         <activity
             android:name="www.comradesoftware.vip.activities.SplashActivity"
-            android:label="@string/app_name"
             android:theme="@style/AppTheme.Splash_translucent"
             >
+        </activity>
+
+        <activity
+            android:name="www.comradesoftware.vip.activities.SubWebActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
