@@ -42,17 +42,17 @@
         <activity android:name="www.comradesoftware.vip.activities.BaseActivity" />
         <activity
             android:name="www.comradesoftware.vip.activities.SplashActivity"
-            android:theme="@style/AppTheme.Splash_translucent"
+            android:theme="@style/AppTheme.Splash_bg"
             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity
             android:name="www.comradesoftware.vip.activities.SubWebActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <!--腾讯移动推送（信鸽）回调-->

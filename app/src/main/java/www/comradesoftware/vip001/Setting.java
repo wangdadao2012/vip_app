@@ -18,6 +18,11 @@ public class Setting implements www.comradesoftware.vip.i.ISetting {
     }
 
     @Override
+    public String getToken() {
+        return "token";
+    }
+
+    @Override
     public String getDomain() {
         return "http://app.1m1m.cc/";
     }
