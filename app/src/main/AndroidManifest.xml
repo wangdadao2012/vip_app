@@ -37,7 +37,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name="www.comradesoftware.vip.activities.MainActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:theme="@style/AppTheme"
             android:label="@string/app_name" />
         <activity android:name="www.comradesoftware.vip.activities.BaseActivity" />
         <activity
@@ -52,7 +52,7 @@
 
         <activity
             android:name="www.comradesoftware.vip.activities.SubWebActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar">
+            android:theme="@style/AppTheme">
         </activity>
 
         <!--腾讯移动推送（信鸽）回调-->
